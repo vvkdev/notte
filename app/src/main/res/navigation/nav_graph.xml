@@ -13,4 +13,11 @@
             android:label="ListFragment"
             tools:layout="@layout/fragment_list"
             />
+    </fragment>
+    <fragment
+            android:id="@+id/editFragment"
+            android:name="com.vvkdev.notte.EditFragment"
+            android:label="EditFragment"
+            tools:layout="@layout/fragment_edit"
+            />
 </navigation>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="no_notes">Нет заметок…</string>
-    <string name="add_note">Добавить заметку</string>
+    <string name="note_add">Добавить заметку</string>
+    <string name="note_save">Сохранить заметку</string>
 </resources>

@@ -41,7 +41,7 @@
             android:layout_marginBottom="16dp"
             android:layout_marginEnd="16dp"
             android:focusable="true"
-            android:contentDescription="@string/add_note"
+            android:contentDescription="@string/note_add"
             />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

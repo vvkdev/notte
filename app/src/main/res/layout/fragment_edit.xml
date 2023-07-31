@@ -11,6 +11,8 @@
 
     <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edTitle"
+            android:hint="@string/note_title_hint"
+            android:textColorHint="@color/grey"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -24,6 +26,8 @@
 
     <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edContent"
+            android:hint="@string/note_content_hint"
+            android:textColorHint="@color/grey"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="8dp"

@@ -4,4 +4,6 @@
     <string name="no_notes">No notes…</string>
     <string name="note_add">Add note</string>
     <string name="note_save">Save note</string>
+    <string name="note_title_hint">Note title</string>
+    <string name="note_content_hint">Note content</string>
 </resources>

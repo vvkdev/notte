@@ -1,8 +1,8 @@
 # RecyclerView on Database example
 src:  
 Neco  
-[SQLite База Данных на Андроид](https://www.youtube.com/watch?v=udnaDIWjamg)  
-[Создаем приложение "БЛОКНОТ"](https://www.youtube.com/watch?v=tQot9NMbtiw)
+[SQLite Р‘Р°Р·Р° Р”Р°РЅРЅС‹С… РЅР° РђРЅРґСЂРѕРёРґ](https://www.youtube.com/watch?v=udnaDIWjamg)  
+[РЎРѕР·РґР°РµРј РїСЂРёР»РѕР¶РµРЅРёРµ "Р‘Р›РћРљРќРћРў"](https://www.youtube.com/watch?v=tQot9NMbtiw)
 ## Steps
 - step 1
 - step 2

@@ -10,32 +10,29 @@
         >
 
     <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"
-            android:id="@+id/edTitle"
-            android:background="@android:drawable/editbox_background"
-            android:padding="10dp"
             />
 
     <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edContent"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:id="@+id/edContent"
-            app:layout_constraintStart_toStartOf="@+id/edTitle"
-            app:layout_constraintEnd_toEndOf="@+id/edTitle"
-            app:layout_constraintTop_toBottomOf="@+id/edTitle"
-            android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="8dp"
-            android:gravity="top"
-            android:background="@android:drawable/editbox_background"
+            android:layout_margin="8dp"
             android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edTitle"
             />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

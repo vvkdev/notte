@@ -6,5 +6,18 @@
         <item name="boxBackgroundColor">?attr/colorOnPrimary</item>
         <item name="android:padding">0dp</item>
         <item name="android:layout_margin">8dp</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Notte.TextInputEdit</item>
+    </style>
+
+    <style name="ThemeOverlay.Notte.TextInputEdit" parent="">
+        <item name="editTextStyle">@style/Widget.Notte.TextInputEditText</item>
+    </style>
+
+    <style name="Widget.Notte.TextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:minHeight">40dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
     </style>
 </resources>

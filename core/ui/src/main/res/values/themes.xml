@@ -8,6 +8,7 @@
         <item name="colorSecondary">@color/secondary_day_pink</item>
         <item name="colorOnSecondary">@color/white</item>
         <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/Widget.Notte.TextInputLayout</item>
     </style>
 
     <style name="Base.Theme.Notte" parent="Base.V21.Theme.Notte" />

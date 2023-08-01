@@ -10,6 +10,7 @@
         <!-- Customize your theme here. -->
         <item name="actionBarStyle">@style/Widget.MaterialComponents.ActionBar.Primary</item>
         <item name='android:navigationBarColor'>@color/black</item>
+        <item name="textInputStyle">@style/Widget.Notte.TextInputLayout</item>
     </style>
 
     <style name="Base.Theme.Notte" parent="Base.V21.Night.Theme.Notte" />

@@ -9,6 +9,7 @@
         <item name="colorOnSecondary">@color/white</item>
         <!-- Customize your theme here. -->
         <item name="textInputStyle">@style/Widget.Notte.TextInputLayout</item>
+        <item name="floatingActionButtonStyle">@style/Widget.Notte.FloatingActionButton</item>
     </style>
 
     <style name="Base.Theme.Notte" parent="Base.V21.Theme.Notte" />

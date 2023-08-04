@@ -32,31 +32,40 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilContent"
+    <ScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="8dp"
-            app:errorEnabled="false"
+            android:fillViewport="true"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            android:scrollbarFadeDuration="3000"
             app:layout_constraintTop_toBottomOf="@id/tilTitle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             >
 
-        <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edContent"
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilContent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="top"
-                android:hint="@string/note_content_hint"
-                />
+                android:layout_height="wrap_content"
+                >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edContent"
+                    android:gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/note_content_hint"
+                    />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    </ScrollView>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:src="@drawable/ic_done"
             android:id="@+id/fabSave"
+            android:src="@drawable/ic_done"
             android:contentDescription="@string/note_save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

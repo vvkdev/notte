@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.vvkdev.notte"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.vvkdev.notte"
         minSdk = 21
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
         setProperty("archivesBaseName", rootProject.name.replace(" ", "") + "-v$versionName")

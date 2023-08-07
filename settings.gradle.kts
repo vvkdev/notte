@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Notte"
+rootProject.name = "notte"
 include(":app")
 include(":core:ui")

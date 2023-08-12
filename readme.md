@@ -4,6 +4,7 @@ Neco
 [SQLite База Данных на Андроид](https://www.youtube.com/watch?v=udnaDIWjamg)  
 [Создаем приложение "БЛОКНОТ"](https://www.youtube.com/watch?v=tQot9NMbtiw)
 ## Differences
+- app icon
 - new theme colors
 - theme inheritance
 - styled TextInputLayout w daynight background

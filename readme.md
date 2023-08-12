@@ -1,12 +1,12 @@
 # RecyclerView on Database example
-src:  
+## Src
 Neco  
 [SQLite База Данных на Андроид](https://www.youtube.com/watch?v=udnaDIWjamg)  
 [Создаем приложение "БЛОКНОТ"](https://www.youtube.com/watch?v=tQot9NMbtiw)
 ## Notes
-   db viewer: run app > view > tool windows > app inspection > database inspector tab
-   id = is in the BaseColumns
-   db must be open before insert
+- db viewer: run app > view > tool windows > app inspection > database inspector tab
+- id = is in the BaseColumns
+- db must be open before insert
 ## Steps
 - sub package 'db'
 - db/Note.kt
@@ -83,7 +83,8 @@ Neco
    ```
    private val dbManager: DbManager by lazy<DbManager> { DbManager(requireActivity()) }
    // insert data
-   .setOnClickListener { with(binding) { dbManager.insertToDb(edTitle.text.toString(), edContent.text.toString()) } }
+   .setOnClickListener { with(binding) {
+      dbManager.insertToDb(edTitle.text.toString(), edContent.text.toString()) } }
    // read data
    .setOnClickListener {    
    tvDb.text = ""

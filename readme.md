@@ -3,6 +3,19 @@
 Neco  
 [SQLite База Данных на Андроид](https://www.youtube.com/watch?v=udnaDIWjamg)  
 [Создаем приложение "БЛОКНОТ"](https://www.youtube.com/watch?v=tQot9NMbtiw)
+## Differences
+- new theme colors
+- theme inheritance
+- styled TextInputLayout w daynight background
+- long content scroll
+- custom scrollbar
+- styled fab
+- fragments
+- jetpack navigation
+- lazy init
+- Note class
+- show 1st line of content in RecyclerView
+- sort notes
 ## Notes
 - db viewer: run app > view > tool windows > app inspection > database inspector tab
 - id = is in the BaseColumns

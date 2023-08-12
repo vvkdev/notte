@@ -13,7 +13,7 @@ class EditFragment : Fragment() {
 
     private var _binding: FragmentEditBinding? = null
     private val binding get() = _binding!!
-    private val dbManager: DbManager by lazy<DbManager> { DbManager(requireContext()) }
+    private val dbManager: DbManager by lazy { DbManager(requireContext()) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -5,30 +5,27 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.vvkdev.notte.databinding.RvItemBinding
 import com.vvkdev.notte.db.Note
 
 class NoteAdapter(private val list: MutableList<Note>) :
     RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
 
-    class NoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val tvTitle: TextView = itemView.findViewById(R.id.tvTitle)
-        private val tvContent: TextView = itemView.findViewById(R.id.tvContent)
-
-        fun setData(note: Note) {
-            tvTitle.text = note.title
-            tvContent.text = note.content
-        }
-    }
+    class NoteViewHolder(val binding: RvItemBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun getItemCount() = list.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return NoteViewHolder(inflater.inflate(R.layout.rv_item, parent, false))
+        val binding = RvItemBinding.inflate(inflater, parent, false)
+        return NoteViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
-        holder.setData(list[position])
+        with(holder.binding) {
+            tvTitle.text = list[position].title
+            tvContent.text = list[position].content
+        }
     }
 
     fun updateAdapter(listItems: List<Note>) {

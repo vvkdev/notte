@@ -16,6 +16,7 @@ Neco
 - Note class
 - show 1st line of content in RecyclerView
 - sort notes
+- adapter binding
 ## Notes
 - db viewer: run app > view > tool windows > app inspection > database inspector tab
 - id = is in the BaseColumns

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.vvkdev.notte.databinding.FragmentEditBinding
@@ -28,12 +29,17 @@ class EditFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.fabSave.setOnClickListener {
             with(binding) {
-                dbManager.insertToDb(
-                    edTitle.text.toString(),
-                    edContent.text.toString()
-                )
+                val title = edTitle.text.toString()
+                val content = edContent.text.toString()
+                if (title.isNotEmpty() && content.isNotEmpty()) {
+                    dbManager.insertToDb(title, content)
+                    findNavController().popBackStack()
+                } else {
+                    Toast
+                        .makeText(requireContext(), "Empty note", Toast.LENGTH_SHORT)
+                        .show()
+                }
             }
-            findNavController().popBackStack()
         }
     }
 

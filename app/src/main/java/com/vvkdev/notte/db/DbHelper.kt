@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper
 
 class DbHelper(context: Context) :
     SQLiteOpenHelper(context, DbNotes.DB_NOTES, null, DbNotes.DB_VERSION) {
+
     override fun onCreate(db: SQLiteDatabase?) {
         db?.execSQL(DbNotes.CREATE_TABLE)
     }

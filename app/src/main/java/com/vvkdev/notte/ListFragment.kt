@@ -36,7 +36,13 @@ class ListFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        adapter.updateAdapter(dbManager.readDb())
+        val list = dbManager.readDb()
+        adapter.updateAdapter(list)
+        if (list.size > 0) {
+            binding.tvNoElements.visibility = View.GONE
+        } else {
+            binding.tvNoElements.visibility = View.VISIBLE
+        }
     }
 
     override fun onDestroyView() {

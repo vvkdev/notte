@@ -5,4 +5,5 @@
     <string name="note_save">Сохранить заметку</string>
     <string name="note_title_hint">Имя заметки</string>
     <string name="note_content_hint">Заметка</string>
+    <string name="empty_note">Пустая заметка</string>
 </resources>

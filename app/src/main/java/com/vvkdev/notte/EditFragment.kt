@@ -36,7 +36,7 @@ class EditFragment : Fragment() {
                     findNavController().popBackStack()
                 } else {
                     Toast
-                        .makeText(requireContext(), "Empty note", Toast.LENGTH_SHORT)
+                        .makeText(requireContext(), R.string.empty_note, Toast.LENGTH_SHORT)
                         .show()
                 }
             }
